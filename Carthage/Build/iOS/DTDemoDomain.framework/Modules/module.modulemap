@@ -1,0 +1,6 @@
+framework module DTDemoDomain {
+  umbrella header "DTDemoDomain.h"
+
+  export *
+  module * { export * }
+}

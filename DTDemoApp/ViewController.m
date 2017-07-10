@@ -19,10 +19,20 @@
     [super viewDidLoad];
 }
 
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)reloadViewControllers {
+    UIViewController *vcA = self.featureACoordinator.featureAViewController;
+    UIViewController *vcB = self.featureBCoordinator.featureBListViewController;
+
+    if (vcA && vcB) {
+        vcA.tabBarItem.title = @"Feature A";
+        vcB.tabBarItem.title = @"Feature B";
+        self.viewControllers = @[vcA, vcB];
+    }
 }
 
 

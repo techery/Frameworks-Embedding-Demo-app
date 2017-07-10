@@ -7,21 +7,31 @@
 //
 
 #import "AViewController.h"
-#import <AFNetworking/AFNetworking.h>
+#import <DTDemoDomain/DTDemoDomain.h>
 
 @interface AViewController ()
+
+@property (nonatomic, strong) id <DTFeatureBCoordinatorProtocol> featureBCoordinator;
 
 @end
 
 @implementation AViewController
 
+- (instancetype)initWithFeatureBCoordinator:(id<DTFeatureBCoordinatorProtocol>)featureBCoordinator {
+    if (self = [super init]) {
+        self.featureBCoordinator = featureBCoordinator;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.title = @"A View Controller";
+    self.navigationItem.title = @"A View Controller";
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
 
-    id session = [[AFURLSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
-    NSLog(@"Session: %@", session);
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Show Details" style:UIBarButtonItemStylePlain target:self action:@selector(showDetailsButtonPressed:)];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,14 +39,12 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)showDetailsButtonPressed:(id)sender {
+    DTFeatureModel *model = [DTFeatureModel new];
+    UIViewController *vc = [self.featureBCoordinator featureBDetailsViewControllerWithModel:model];
+    if (vc) {
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
-*/
 
 @end

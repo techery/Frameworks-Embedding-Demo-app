@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		441844211F13751B00D391A1 /* DTDemoDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441844201F13751B00D391A1 /* DTDemoDomain.framework */; };
+		4426AEAF1F137C950060212E /* DTFeatureACoordinatorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4426AEAE1F137C950060212E /* DTFeatureACoordinatorImpl.m */; };
+		4426AEB21F137D520060212E /* DTFeatureBCoordinatorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4426AEB11F137D520060212E /* DTFeatureBCoordinatorImpl.m */; };
+		4426AEC91F137DDE0060212E /* FeatureB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4426AEC81F137DDE0060212E /* FeatureB.framework */; };
 		448F90941F0E684A00A3C548 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 448F90931F0E684A00A3C548 /* main.m */; };
 		448F90971F0E684A00A3C548 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 448F90961F0E684A00A3C548 /* AppDelegate.m */; };
 		448F909A1F0E684A00A3C548 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 448F90991F0E684A00A3C548 /* ViewController.m */; };
@@ -14,25 +18,15 @@
 		448F909F1F0E684A00A3C548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 448F909E1F0E684A00A3C548 /* Assets.xcassets */; };
 		448F90A21F0E684A00A3C548 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448F90A01F0E684A00A3C548 /* LaunchScreen.storyboard */; };
 		448F90C01F0E68D800A3C548 /* FeatureA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448F90BF1F0E68D800A3C548 /* FeatureA.framework */; };
-		448F90D41F0E785F00A3C548 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448F90D21F0E762600A3C548 /* AFNetworking.framework */; };
-		448F90D51F0E785F00A3C548 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 448F90D21F0E762600A3C548 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		448F90D61F0E785F00A3C548 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				448F90D51F0E785F00A3C548 /* AFNetworking.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		441844201F13751B00D391A1 /* DTDemoDomain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DTDemoDomain.framework; path = Carthage/Build/iOS/DTDemoDomain.framework; sourceTree = "<group>"; };
+		4426AEAD1F137C950060212E /* DTFeatureACoordinatorImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTFeatureACoordinatorImpl.h; sourceTree = "<group>"; };
+		4426AEAE1F137C950060212E /* DTFeatureACoordinatorImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTFeatureACoordinatorImpl.m; sourceTree = "<group>"; };
+		4426AEB01F137D520060212E /* DTFeatureBCoordinatorImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTFeatureBCoordinatorImpl.h; sourceTree = "<group>"; };
+		4426AEB11F137D520060212E /* DTFeatureBCoordinatorImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTFeatureBCoordinatorImpl.m; sourceTree = "<group>"; };
+		4426AEC81F137DDE0060212E /* FeatureB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FeatureB.framework; path = "FeatureB/build/Debug-iphoneos/FeatureB.framework"; sourceTree = "<group>"; };
 		448F908F1F0E684900A3C548 /* DTDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DTDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		448F90931F0E684A00A3C548 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		448F90951F0E684A00A3C548 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -44,7 +38,6 @@
 		448F90A11F0E684A00A3C548 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		448F90A31F0E684A00A3C548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		448F90BF1F0E68D800A3C548 /* FeatureA.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FeatureA.framework; path = "FeatureA/build/Debug-iphoneos/FeatureA.framework"; sourceTree = "<group>"; };
-		448F90D21F0E762600A3C548 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +45,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				441844211F13751B00D391A1 /* DTDemoDomain.framework in Frameworks */,
+				4426AEC91F137DDE0060212E /* FeatureB.framework in Frameworks */,
 				448F90C01F0E68D800A3C548 /* FeatureA.framework in Frameworks */,
-				448F90D41F0E785F00A3C548 /* AFNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +83,10 @@
 				448F90A01F0E684A00A3C548 /* LaunchScreen.storyboard */,
 				448F90A31F0E684A00A3C548 /* Info.plist */,
 				448F90921F0E684A00A3C548 /* Supporting Files */,
+				4426AEAD1F137C950060212E /* DTFeatureACoordinatorImpl.h */,
+				4426AEAE1F137C950060212E /* DTFeatureACoordinatorImpl.m */,
+				4426AEB01F137D520060212E /* DTFeatureBCoordinatorImpl.h */,
+				4426AEB11F137D520060212E /* DTFeatureBCoordinatorImpl.m */,
 			);
 			path = DTDemoApp;
 			sourceTree = "<group>";
@@ -104,7 +102,8 @@
 		448F90BE1F0E68D800A3C548 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				448F90D21F0E762600A3C548 /* AFNetworking.framework */,
+				4426AEC81F137DDE0060212E /* FeatureB.framework */,
+				441844201F13751B00D391A1 /* DTDemoDomain.framework */,
 				448F90BF1F0E68D800A3C548 /* FeatureA.framework */,
 			);
 			name = Frameworks;
@@ -121,7 +120,6 @@
 				448F908C1F0E684900A3C548 /* Frameworks */,
 				448F908D1F0E684900A3C548 /* Resources */,
 				448F90D11F0E75A600A3C548 /* Carthage */,
-				448F90D61F0E785F00A3C548 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -186,11 +184,11 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/AFNetworking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/DTDemoDomain.framework",
 			);
 			name = Carthage;
 			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/AFNetworking.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/DTDemoDomain.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -204,8 +202,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				448F909A1F0E684A00A3C548 /* ViewController.m in Sources */,
+				4426AEAF1F137C950060212E /* DTFeatureACoordinatorImpl.m in Sources */,
 				448F90971F0E684A00A3C548 /* AppDelegate.m in Sources */,
 				448F90941F0E684A00A3C548 /* main.m in Sources */,
+				4426AEB21F137D520060212E /* DTFeatureBCoordinatorImpl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,12 +326,14 @@
 		448F90A71F0E684A00A3C548 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EEJA65ZWYD;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FeatureA/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/FeatureB/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = DTDemoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -343,12 +345,14 @@
 		448F90A81F0E684A00A3C548 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EEJA65ZWYD;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FeatureA/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/FeatureB/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = DTDemoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

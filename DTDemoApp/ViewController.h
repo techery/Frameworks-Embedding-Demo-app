@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <FeatureA/FeatureA.h>
+#import <DTDemoDomain/DTFeatureACoordinatorProtocol.h>
+#import <DTDemoDomain/DTFeatureBCoordinatorProtocol.h>
 
-@interface ViewController : AViewController
+@interface ViewController : UITabBarController
 
+@property (nonatomic, strong) id <DTFeatureACoordinatorProtocol> featureACoordinator;
+@property (nonatomic, strong) id <DTFeatureBCoordinatorProtocol> featureBCoordinator;
+
+- (void)reloadViewControllers;
 
 @end
 

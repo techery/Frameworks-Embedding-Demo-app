@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4401A3681F0E7AB500EC0D64 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4401A3671F0E7AB500EC0D64 /* AFNetworking.framework */; };
+		4418441B1F1373F100D391A1 /* DTDemoDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4418441A1F1373F100D391A1 /* DTDemoDomain.framework */; };
 		448F90B81F0E68BB00A3C548 /* FeatureA.h in Headers */ = {isa = PBXBuildFile; fileRef = 448F90B61F0E68BB00A3C548 /* FeatureA.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		448F90C31F0E690800A3C548 /* AViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 448F90C11F0E690800A3C548 /* AViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		448F90C41F0E690800A3C548 /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 448F90C21F0E690800A3C548 /* AViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4401A3671F0E7AB500EC0D64 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = ../Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
+		4418441A1F1373F100D391A1 /* DTDemoDomain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DTDemoDomain.framework; path = ../Carthage/Build/iOS/DTDemoDomain.framework; sourceTree = "<group>"; };
 		448F90B31F0E68BB00A3C548 /* FeatureA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FeatureA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		448F90B61F0E68BB00A3C548 /* FeatureA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureA.h; sourceTree = "<group>"; };
 		448F90B71F0E68BB00A3C548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -27,7 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4401A3681F0E7AB500EC0D64 /* AFNetworking.framework in Frameworks */,
+				4418441B1F1373F100D391A1 /* DTDemoDomain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +65,7 @@
 		448F90C51F0E736000A3C548 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4401A3671F0E7AB500EC0D64 /* AFNetworking.framework */,
+				4418441A1F1373F100D391A1 /* DTDemoDomain.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

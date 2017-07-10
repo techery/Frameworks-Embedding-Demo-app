@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <DTDemoDomain/DTFeatureBCoordinatorProtocol.h>
 
 @interface AViewController : UIViewController
+
+- (instancetype)initWithFeatureBCoordinator:(id <DTFeatureBCoordinatorProtocol>)featureBCoordinator;
 
 @end
