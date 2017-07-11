@@ -18,7 +18,30 @@
 		448F909F1F0E684A00A3C548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 448F909E1F0E684A00A3C548 /* Assets.xcassets */; };
 		448F90A21F0E684A00A3C548 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448F90A01F0E684A00A3C548 /* LaunchScreen.storyboard */; };
 		448F90C01F0E68D800A3C548 /* FeatureA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448F90BF1F0E68D800A3C548 /* FeatureA.framework */; };
+		44F71FE71F14CE6C00E3B678 /* FeatureC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F71FE61F14CE6C00E3B678 /* FeatureC.framework */; };
+		44F71FE91F14D34300E3B678 /* FeatureC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F71FE81F14D34300E3B678 /* FeatureC.framework */; };
+		44F71FEA1F14D34300E3B678 /* FeatureC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 44F71FE81F14D34300E3B678 /* FeatureC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		44F71FED1F14D5A600E3B678 /* FeatureB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F71FEC1F14D5A600E3B678 /* FeatureB.framework */; };
+		44F71FEE1F14D5A600E3B678 /* FeatureB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 44F71FEC1F14D5A600E3B678 /* FeatureB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		44F71FF01F14D5A700E3B678 /* FeatureA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F71FEF1F14D5A700E3B678 /* FeatureA.framework */; };
+		44F71FF11F14D5A700E3B678 /* FeatureA.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 44F71FEF1F14D5A700E3B678 /* FeatureA.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		44F71FEB1F14D34400E3B678 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				44F71FEE1F14D5A600E3B678 /* FeatureB.framework in Embed Frameworks */,
+				44F71FF11F14D5A700E3B678 /* FeatureA.framework in Embed Frameworks */,
+				44F71FEA1F14D34300E3B678 /* FeatureC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		441844201F13751B00D391A1 /* DTDemoDomain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DTDemoDomain.framework; path = Carthage/Build/iOS/DTDemoDomain.framework; sourceTree = "<group>"; };
@@ -38,6 +61,10 @@
 		448F90A11F0E684A00A3C548 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		448F90A31F0E684A00A3C548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		448F90BF1F0E68D800A3C548 /* FeatureA.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FeatureA.framework; path = "FeatureA/build/Debug-iphoneos/FeatureA.framework"; sourceTree = "<group>"; };
+		44F71FE61F14CE6C00E3B678 /* FeatureC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FeatureC.framework; path = "FeatureC/build/Debug-iphoneos/FeatureC.framework"; sourceTree = "<group>"; };
+		44F71FE81F14D34300E3B678 /* FeatureC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FeatureC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44F71FEC1F14D5A600E3B678 /* FeatureB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FeatureB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44F71FEF1F14D5A700E3B678 /* FeatureA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FeatureA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,8 +72,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44F71FE71F14CE6C00E3B678 /* FeatureC.framework in Frameworks */,
 				441844211F13751B00D391A1 /* DTDemoDomain.framework in Frameworks */,
+				44F71FE91F14D34300E3B678 /* FeatureC.framework in Frameworks */,
 				4426AEC91F137DDE0060212E /* FeatureB.framework in Frameworks */,
+				44F71FF01F14D5A700E3B678 /* FeatureA.framework in Frameworks */,
+				44F71FED1F14D5A600E3B678 /* FeatureB.framework in Frameworks */,
 				448F90C01F0E68D800A3C548 /* FeatureA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,6 +88,9 @@
 		448F90861F0E684900A3C548 = {
 			isa = PBXGroup;
 			children = (
+				44F71FEF1F14D5A700E3B678 /* FeatureA.framework */,
+				44F71FEC1F14D5A600E3B678 /* FeatureB.framework */,
+				44F71FE81F14D34300E3B678 /* FeatureC.framework */,
 				448F90911F0E684A00A3C548 /* DTDemoApp */,
 				448F90901F0E684900A3C548 /* Products */,
 				448F90BE1F0E68D800A3C548 /* Frameworks */,
@@ -102,6 +136,7 @@
 		448F90BE1F0E68D800A3C548 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				44F71FE61F14CE6C00E3B678 /* FeatureC.framework */,
 				4426AEC81F137DDE0060212E /* FeatureB.framework */,
 				441844201F13751B00D391A1 /* DTDemoDomain.framework */,
 				448F90BF1F0E68D800A3C548 /* FeatureA.framework */,
@@ -120,6 +155,7 @@
 				448F908C1F0E684900A3C548 /* Frameworks */,
 				448F908D1F0E684900A3C548 /* Resources */,
 				448F90D11F0E75A600A3C548 /* Carthage */,
+				44F71FEB1F14D34400E3B678 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -334,6 +370,7 @@
 					"$(PROJECT_DIR)/FeatureA/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(PROJECT_DIR)/FeatureB/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/FeatureC/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = DTDemoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -353,6 +390,7 @@
 					"$(PROJECT_DIR)/FeatureA/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(PROJECT_DIR)/FeatureB/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/FeatureC/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = DTDemoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
