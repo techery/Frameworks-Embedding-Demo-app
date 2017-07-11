@@ -32,6 +32,12 @@
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
 
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Show Details" style:UIBarButtonItemStylePlain target:self action:@selector(showDetailsButtonPressed:)];
+
+    UIImage *image = [UIImage imageNamed:@"Cover_Placeholder" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:nil];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+    imageView.frame = CGRectMake(80, 80, 260, 260);
+    [self.view addSubview:imageView];
+
 }
 
 - (void)didReceiveMemoryWarning {

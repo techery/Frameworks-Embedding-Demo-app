@@ -11,6 +11,7 @@
 		448F90B81F0E68BB00A3C548 /* FeatureA.h in Headers */ = {isa = PBXBuildFile; fileRef = 448F90B61F0E68BB00A3C548 /* FeatureA.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		448F90C31F0E690800A3C548 /* AViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 448F90C11F0E690800A3C548 /* AViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		448F90C41F0E690800A3C548 /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 448F90C21F0E690800A3C548 /* AViewController.m */; };
+		44F71FF41F14E5F700E3B678 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44F71FF31F14E5F700E3B678 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		448F90B71F0E68BB00A3C548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		448F90C11F0E690800A3C548 /* AViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AViewController.h; sourceTree = "<group>"; };
 		448F90C21F0E690800A3C548 /* AViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AViewController.m; sourceTree = "<group>"; };
+		44F71FF31F14E5F700E3B678 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,7 @@
 		448F90A91F0E68BB00A3C548 = {
 			isa = PBXGroup;
 			children = (
+				44F71FF21F14E5E200E3B678 /* Resources */,
 				448F90B51F0E68BB00A3C548 /* FeatureA */,
 				448F90B41F0E68BB00A3C548 /* Products */,
 				448F90C51F0E736000A3C548 /* Frameworks */,
@@ -68,6 +71,14 @@
 				4418441A1F1373F100D391A1 /* DTDemoDomain.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44F71FF21F14E5E200E3B678 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				44F71FF31F14E5F700E3B678 /* Media.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44F71FF41F14E5F700E3B678 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
