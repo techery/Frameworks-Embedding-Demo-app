@@ -8,24 +8,20 @@
 
 #import "AViewController.h"
 #import <DTDemoDomain/DTDemoDomain.h>
+#import <CRDI/CRDIInjector.h>
 
 @interface AViewController ()
 
-@property (nonatomic, strong) id <DTFeatureBCoordinatorProtocol> featureBCoordinator;
+@property (nonatomic, strong) id <DTFeatureBCoordinatorProtocol> ioc_featureBCoordinator;
 
 @end
 
 @implementation AViewController
 
-- (instancetype)initWithFeatureBCoordinator:(id<DTFeatureBCoordinatorProtocol>)featureBCoordinator {
-    if (self = [super init]) {
-        self.featureBCoordinator = featureBCoordinator;
-    }
-    return self;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    [[CRDIInjector defaultInjector] injectTo:self];
 
     self.navigationItem.title = @"A View Controller";
     self.view.backgroundColor = [UIColor whiteColor];
@@ -47,7 +43,7 @@
 
 - (void)showDetailsButtonPressed:(id)sender {
     DTFeatureModel *model = [DTFeatureModel new];
-    UIViewController *vc = [self.featureBCoordinator featureBDetailsViewControllerWithModel:model];
+    UIViewController *vc = [self.ioc_featureBCoordinator featureBDetailsViewControllerWithModel:model];
     if (vc) {
         [self.navigationController pushViewController:vc animated:YES];
     }

@@ -1,0 +1,274 @@
+BCSymbolMap Version: 2.0
+-[DIClassTemplate templateClass]
+-[DIClassTemplate setTemplateClass:]
+-[DIClassTemplate properties]
+-[DIClassTemplate setProperties:]
+-[DIClassTemplate .cxx_destruct]
+_OBJC_IVAR_$_DIClassTemplate._templateClass
+_OBJC_IVAR_$_DIClassTemplate._properties
+Apple LLVM version 8.1.0 (clang-802.0.42)
+/Users/eugene/Documents/Development/Techery/DTDemoApp/Carthage/Checkouts/DI/CRDI/Code/DIClassInspection/ClassTemplate/DIClassTemplate.m
+/Users/eugene/Documents/Development/Techery/DTDemoApp/Carthage/Checkouts/DI
+/Users/eugene/Documents/Development/Techery/DTDemoApp/Carthage/Checkouts/DI/CRDI/Code/DIClassInspection/ClassTemplate/DIClassTemplate.h
+-[DIPropertyModel name]
+-[DIPropertyModel setName:]
+-[DIPropertyModel protocol]
+-[DIPropertyModel setProtocol:]
+-[DIPropertyModel .cxx_destruct]
+_OBJC_IVAR_$_DIPropertyModel._name
+_OBJC_IVAR_$_DIPropertyModel._protocol
+/Users/eugene/Documents/Development/Techery/DTDemoApp/Carthage/Checkouts/DI/CRDI/Code/DIClassInspection/ClassTemplate/DIPropertyModel.m
+/Users/eugene/Documents/Development/Techery/DTDemoApp/Carthage/Checkouts/DI/CRDI/Code/DIClassInspection/ClassTemplate/DIPropertyModel.h
+-[CRDIDefaultPropertyNameMatcher shouldInject:]
+l_OBJC_PROTOCOL_$_NSObject
+l_OBJC_LABEL_PROTOCOL_$_NSObject
+l_OBJC_PROTOCOL_$_CRDIPropertyNameMatcher
+l_OBJC_LABEL_PROTOCOL_$_CRDIPropertyNameMatcher
+/Users/eugene/Documents/Development/Techery/DTDemoApp/Carthage/Checkouts/DI/CRDI/Code/DIClassInspection/PropertyMatcher/CRDIDefaultPropertyNameMatcher.m
+-[_RTObjCProperty initWithObjCProperty:]
+-[_RTObjCProperty initWithName:attributes:]
+-[_RTObjCProperty dealloc]
+-[_RTObjCProperty name]
+-[_RTObjCProperty attributes]
+-[_RTObjCProperty attributeEncodings]
+-[_RTObjCProperty hasAttribute:]
+-[_RTObjCProperty isReadOnly]
+-[_RTObjCProperty setterSemantics]
+-[_RTObjCProperty isNonAtomic]
+-[_RTObjCProperty isDynamic]
+-[_RTObjCProperty isWeakReference]
+-[_RTObjCProperty isEligibleForGarbageCollection]
+-[_RTObjCProperty contentOfAttribute:]
+-[_RTObjCProperty customGetter]
+-[_RTObjCProperty customSetter]
+-[_RTObjCProperty typeEncoding]
+-[_RTObjCProperty oldTypeEncoding]
+-[_RTObjCProperty ivarName]
++[RTProperty propertyWithObjCProperty:]
++[RTProperty propertyWithName:attributes:]
+-[RTProperty initWithObjCProperty:]
+-[RTProperty initWithName:attributes:]
+-[RTProperty description]
+-[RTProperty isEqual:]
+-[RTProperty hash]
+-[RTProperty name]
+-[RTProperty attributes]
+-[RTProperty addToClass:]
+-[RTProperty attributeEncodings]
+-[RTProperty isReadOnly]
+-[RTProperty setterSemantics]
+-[RTProperty isNonAtomic]
+-[RTProperty isDynamic]
+-[RTProperty isWeakReference]
+-[RTProperty isEligibleForGarbageCollection]
+-[RTProperty customGetter]
+-[RTProperty customSetter]
+-[RTProperty typeEncoding]
+-[RTProperty oldTypeEncoding]
+-[RTProperty ivarName]
+/Users/eugene/Documents/Development/Techery/DTDemoApp/Carthage/Checkouts/DI/CRDI/Code/RuntimeHelpers/RTProperty.m
+-[CRDIBlockBuilder initWithBlock:]
+-[CRDIBlockBuilder build]
+-[CRDIBlockBuilder bindBlock]
+-[CRDIBlockBuilder setBindBlock:]
+-[CRDIBlockBuilder .cxx_destruct]
+_OBJC_IVAR_$_CRDIBlockBuilder._bindBlock
+l_OBJC_PROTOCOL_$_CRDIDependencyBuilder
+l_OBJC_LABEL_PROTOCOL_$_CRDIDependencyBuilder
+/Users/eugene/Documents/Development/Techery/DTDemoApp/Carthage/Checkouts/DI/CRDI/Code/DIBuilders/DIBlockBuilder/CRDIBlockBuilder.m
+-[_RTObjCProtocol initWithObjCProtocol:]
+-[_RTObjCProtocol objCProtocol]
++[RTProtocol allProtocols]
++[RTProtocol protocolWithObjCProtocol:]
++[RTProtocol protocolWithName:]
+-[RTProtocol initWithObjCProtocol:]
+-[RTProtocol initWithName:]
+-[RTProtocol description]
+-[RTProtocol isEqual:]
+-[RTProtocol hash]
+-[RTProtocol objCProtocol]
+-[RTProtocol name]
+-[RTProtocol incorporatedProtocols]
+-[RTProtocol methodsRequired:instance:]
+/Users/eugene/Documents/Development/Techery/DTDemoApp/Carthage/Checkouts/DI/CRDI/Code/RuntimeHelpers/RTProtocol.m
+-[_RTObjCMethod initWithObjCMethod:]
+-[_RTObjCMethod selector]
+-[_RTObjCMethod implementation]
+-[_RTObjCMethod signature]
+-[_RTObjCMethod setImplementation:]
+-[_RTComponentsMethod initWithSelector:implementation:signature:]
+-[_RTComponentsMethod dealloc]
+-[_RTComponentsMethod selector]
+-[_RTComponentsMethod implementation]
+-[_RTComponentsMethod signature]
+-[_RTComponentsMethod setImplementation:]
++[RTMethod methodWithObjCMethod:]
++[RTMethod methodWithSelector:implementation:signature:]
+-[RTMethod initWithObjCMethod:]
+-[RTMethod initWithSelector:implementation:signature:]
+-[RTMethod description]
+-[RTMethod isEqual:]
+-[RTMethod hash]
+-[RTMethod selector]
+-[RTMethod selectorName]
+-[RTMethod implementation]
+-[RTMethod signature]
+-[RTMethod setImplementation:]
+-[RTMethod _returnValue:sendToTarget:arguments:]
+-[RTMethod sendToTarget:]
+-[RTMethod returnValue:sendToTarget:]
+-[NSObject(RTMethodSendingAdditions) rt_sendMethod:]
+-[NSObject(RTMethodSendingAdditions) rt_returnValue:sendMethod:]
+-[NSObject(RTMethodSendingAdditions) rt_sendSelector:]
+-[NSObject(RTMethodSendingAdditions) rt_returnValue:sendSelector:]
+/Users/eugene/Documents/Development/Techery/DTDemoApp/Carthage/Checkouts/DI/CRDI/Code/RuntimeHelpers/RTMethod.m
++[RTUnregisteredClass unregisteredClassWithName:withSuperclass:]
++[RTUnregisteredClass unregisteredClassWithName:]
+-[RTUnregisteredClass initWithName:withSuperclass:]
+-[RTUnregisteredClass initWithName:]
+-[RTUnregisteredClass addProtocol:]
+-[RTUnregisteredClass addIvar:]
+-[RTUnregisteredClass addMethod:]
+-[RTUnregisteredClass registerClass]
+/Users/eugene/Documents/Development/Techery/DTDemoApp/Carthage/Checkouts/DI/CRDI/Code/RuntimeHelpers/RTUnregisteredClass.m
+-[_RTObjCIvar initWithObjCIvar:]
+-[_RTObjCIvar name]
+-[_RTObjCIvar typeEncoding]
+-[_RTObjCIvar offset]
+-[_RTComponentsIvar initWithName:typeEncoding:]
+-[_RTComponentsIvar dealloc]
+-[_RTComponentsIvar name]
+-[_RTComponentsIvar typeEncoding]
+-[_RTComponentsIvar offset]
++[RTIvar ivarWithObjCIvar:]
++[RTIvar ivarWithName:typeEncoding:]
++[RTIvar ivarWithName:encode:]
+-[RTIvar initWithObjCIvar:]
+-[RTIvar initWithName:typeEncoding:]
+-[RTIvar description]
+-[RTIvar isEqual:]
+-[RTIvar hash]
+-[RTIvar name]
+-[RTIvar typeEncoding]
+-[RTIvar offset]
+/Users/eugene/Documents/Development/Techery/DTDemoApp/Carthage/Checkouts/DI/CRDI/Code/RuntimeHelpers/RTIvar.m
++[CRDIException exceptionWithReason:]
+/Users/eugene/Documents/Development/Techery/DTDemoApp/Carthage/Checkouts/DI/CRDI/Code/DIException/CRDIException.m
++[CRDIInjector defaultInjector]
++[CRDIInjector setDefaultInjector:]
+-[CRDIInjector init]
+-[CRDIInjector initWithContainer:]
+-[CRDIInjector injectTo:]
+-[CRDIInjector classTemplateForInstance:]
+-[CRDIInjector container]
+-[CRDIInjector setContainer:]
+-[CRDIInjector classesCache]
+-[CRDIInjector setClassesCache:]
+-[CRDIInjector classInspector]
+-[CRDIInjector setClassInspector:]
+-[CRDIInjector .cxx_destruct]
+_sDefaultInjector
+_OBJC_IVAR_$_CRDIInjector._container
+_OBJC_IVAR_$_CRDIInjector._classesCache
+_OBJC_IVAR_$_CRDIInjector._classInspector
+l_OBJC_PROTOCOL_$_CRDIInstanceInjector
+l_OBJC_LABEL_PROTOCOL_$_CRDIInstanceInjector
+/Users/eugene/Documents/Development/Techery/DTDemoApp/Carthage/Checkouts/DI/CRDI/Code/DIInjector/CRDIInjector.m
+-[CRDIClassBuilder initWithClass:]
+-[CRDIClassBuilder build]
+-[CRDIClassBuilder classForBuild]
+-[CRDIClassBuilder setClassForBuild:]
+_OBJC_IVAR_$_CRDIClassBuilder._classForBuild
+/Users/eugene/Documents/Development/Techery/DTDemoApp/Carthage/Checkouts/DI/CRDI/Code/DIBuilders/DIClassBuilder/CRDIClassBuilder.m
+/Users/eugene/Documents/Development/Techery/DTDemoApp/Carthage/Checkouts/DI/CRDI/Code/DIBuilders/DIClassBuilder/CRDIClassBuilder.h
+-[CRDIConfiguration initWithContainer:]
+-[CRDIConfiguration initWithParentConfiguratuion:container:]
+-[CRDIConfiguration configure]
+-[CRDIConfiguration includeConfigurationWithClass:]
+-[CRDIConfiguration checkForDependencyLoop]
+-[CRDIConfiguration parentConfiguration]
+-[CRDIConfiguration setParentConfiguration:]
+-[CRDIConfiguration container]
+-[CRDIConfiguration setContainer:]
+-[CRDIConfiguration .cxx_destruct]
+_OBJC_IVAR_$_CRDIConfiguration._parentConfiguration
+_OBJC_IVAR_$_CRDIConfiguration._container
+/Users/eugene/Documents/Development/Techery/DTDemoApp/Carthage/Checkouts/DI/CRDI/Code/DIConfiguration/CRDIConfigratuion.m
+/Users/eugene/Documents/Development/Techery/DTDemoApp/Carthage/Checkouts/DI/CRDI/Code/DIConfiguration/CRDIConfiguration.h
+-[CRDIClassInspector initWithPropertyMatcher:]
+-[CRDIClassInspector init]
+-[CRDIClassInspector inspect:]
+-[CRDIClassInspector parsePropertiesFromClass:]
+-[CRDIClassInspector modelForProperty:]
+-[CRDIClassInspector extractProtocolFromPropertyEncoding:]
+-[CRDIClassInspector propertyNameMatcher]
+-[CRDIClassInspector setPropertyNameMatcher:]
+-[CRDIClassInspector .cxx_destruct]
+_OBJC_IVAR_$_CRDIClassInspector._propertyNameMatcher
+/Users/eugene/Documents/Development/Techery/DTDemoApp/Carthage/Checkouts/DI/CRDI/Code/DIClassInspection/ClassInspector/CRDIClassInspector.m
++[NSObject(MARuntime) rt_subclasses]
++[NSObject(MARuntime) rt_createUnregisteredSubclassNamed:]
++[NSObject(MARuntime) rt_createSubclassNamed:]
++[NSObject(MARuntime) rt_destroyClass]
++[NSObject(MARuntime) rt_isMetaClass]
++[NSObject(MARuntime) rt_setSuperclass:]
++[NSObject(MARuntime) rt_instanceSize]
++[NSObject(MARuntime) rt_protocols]
++[NSObject(MARuntime) rt_methods]
++[NSObject(MARuntime) rt_methodForSelector:]
++[NSObject(MARuntime) rt_addMethod:]
++[NSObject(MARuntime) rt_ivars]
++[NSObject(MARuntime) rt_ivarForName:]
++[NSObject(MARuntime) rt_properties]
++[NSObject(MARuntime) rt_propertyForName:]
+-[NSObject(MARuntime) rt_class]
+-[NSObject(MARuntime) rt_setClass:]
+/Users/eugene/Documents/Development/Techery/DTDemoApp/Carthage/Checkouts/DI/CRDI/Code/RuntimeHelpers/MARTNSObject.m
+-[CRDISingletoneBuilder initWithBuilder:]
+-[CRDISingletoneBuilder build]
+___30-[CRDISingletoneBuilder build]_block_invoke
+___copy_helper_block_
+___destroy_helper_block_
+-[CRDISingletoneBuilder sharedInstance]
+-[CRDISingletoneBuilder setSharedInstance:]
+-[CRDISingletoneBuilder instanceBuilder]
+-[CRDISingletoneBuilder setInstanceBuilder:]
+-[CRDISingletoneBuilder queue]
+-[CRDISingletoneBuilder setQueue:]
+-[CRDISingletoneBuilder .cxx_destruct]
+l_OBJC_PROTOCOL_REFERENCE_$_CRDIDependencyBuilder
+___block_descriptor_tmp
+_OBJC_IVAR_$_CRDISingletoneBuilder._sharedInstance
+_OBJC_IVAR_$_CRDISingletoneBuilder._instanceBuilder
+_OBJC_IVAR_$_CRDISingletoneBuilder._queue
+/Users/eugene/Documents/Development/Techery/DTDemoApp/Carthage/Checkouts/DI/CRDI/Code/DIBuilders/DISingletoneBuilder/CRDISingletoneBuilder.m
+__destroy_helper_block_
+__copy_helper_block_
+__30-[CRDISingletoneBuilder build]_block_invoke
++[CRDIContainer defaultContainer]
++[CRDIContainer setDefaultContainer:]
+-[CRDIContainer init]
+-[CRDIContainer bindClass:toProtocol:]
+-[CRDIContainer bindBlock:toProtocol:]
+-[CRDIContainer bindEagerSingletoneClass:toProtocol:]
+-[CRDIContainer bindEagerSingletoneBlock:toProtocol:]
+-[CRDIContainer addBuilder:forProtocol:]
+-[CRDIContainer addClassBuilder:forProtocol:]
+-[CRDIContainer builderForProtocol:]
+-[CRDIContainer buidersForProtocol:]
+-[CRDIContainer classBuilderFromClass:]
+-[CRDIContainer blockBuilderFromBlock:]
+-[CRDIContainer eagerSingletoneBuilderForClass:]
+-[CRDIContainer eagerSingletoneBuilderForBlock:]
+-[CRDIContainer checkIfBuilderForClass:alreadyExistsForProtocol:]
+-[CRDIContainer checkIfProtocolAlreadyBinded:]
+-[CRDIContainer checkIfProtocolNotBinded:]
+-[CRDIContainer protocolIsBinded:]
+-[CRDIContainer stringFromPorotocol:]
+-[CRDIContainer configurationDictionary]
+-[CRDIContainer setConfigurationDictionary:]
+-[CRDIContainer .cxx_destruct]
+_defaultContainer
+_OBJC_IVAR_$_CRDIContainer._configurationDictionary
+/Users/eugene/Documents/Development/Techery/DTDemoApp/Carthage/Checkouts/DI/CRDI/Code/DIContainer/CRDIContainer.m
+/Users/eugene/Library/Developer/Xcode/DerivedData/CRDI-gkddecrfsawbhufhhvwaquujhtie/Build/Intermediates/CRDI.build/Release-iphoneos/CRDI.build/DerivedSources/CRDI_vers.c

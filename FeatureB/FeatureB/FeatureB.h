@@ -16,3 +16,4 @@ FOUNDATION_EXPORT const unsigned char FeatureBVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <FeatureB/PublicHeader.h>
 
+#import <FeatureB/DTFeatureBCoordinatorImpl.h>

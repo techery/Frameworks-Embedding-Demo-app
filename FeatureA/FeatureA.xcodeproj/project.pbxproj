@@ -11,6 +11,9 @@
 		448F90B81F0E68BB00A3C548 /* FeatureA.h in Headers */ = {isa = PBXBuildFile; fileRef = 448F90B61F0E68BB00A3C548 /* FeatureA.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		448F90C31F0E690800A3C548 /* AViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 448F90C11F0E690800A3C548 /* AViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		448F90C41F0E690800A3C548 /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 448F90C21F0E690800A3C548 /* AViewController.m */; };
+		44A360121F1CFD7600D37278 /* DTFeatureACoordinatorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A360101F1CFD7600D37278 /* DTFeatureACoordinatorImpl.m */; };
+		44A360131F1CFD7600D37278 /* DTFeatureACoordinatorImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 44A360111F1CFD7600D37278 /* DTFeatureACoordinatorImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44A3606A1F1D13AD00D37278 /* CRDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44A360691F1D13AD00D37278 /* CRDI.framework */; };
 		44F71FF41F14E5F700E3B678 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44F71FF31F14E5F700E3B678 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +24,9 @@
 		448F90B71F0E68BB00A3C548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		448F90C11F0E690800A3C548 /* AViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AViewController.h; sourceTree = "<group>"; };
 		448F90C21F0E690800A3C548 /* AViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AViewController.m; sourceTree = "<group>"; };
+		44A360101F1CFD7600D37278 /* DTFeatureACoordinatorImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTFeatureACoordinatorImpl.m; sourceTree = "<group>"; };
+		44A360111F1CFD7600D37278 /* DTFeatureACoordinatorImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTFeatureACoordinatorImpl.h; sourceTree = "<group>"; };
+		44A360691F1D13AD00D37278 /* CRDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CRDI.framework; path = ../Carthage/Build/iOS/CRDI.framework; sourceTree = "<group>"; };
 		44F71FF31F14E5F700E3B678 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44A3606A1F1D13AD00D37278 /* CRDI.framework in Frameworks */,
 				4418441B1F1373F100D391A1 /* DTDemoDomain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,6 +64,8 @@
 		448F90B51F0E68BB00A3C548 /* FeatureA */ = {
 			isa = PBXGroup;
 			children = (
+				44A360101F1CFD7600D37278 /* DTFeatureACoordinatorImpl.m */,
+				44A360111F1CFD7600D37278 /* DTFeatureACoordinatorImpl.h */,
 				448F90B61F0E68BB00A3C548 /* FeatureA.h */,
 				448F90C11F0E690800A3C548 /* AViewController.h */,
 				448F90C21F0E690800A3C548 /* AViewController.m */,
@@ -68,6 +77,7 @@
 		448F90C51F0E736000A3C548 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				44A360691F1D13AD00D37278 /* CRDI.framework */,
 				4418441A1F1373F100D391A1 /* DTDemoDomain.framework */,
 			);
 			name = Frameworks;
@@ -89,6 +99,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				448F90B81F0E68BB00A3C548 /* FeatureA.h in Headers */,
+				44A360131F1CFD7600D37278 /* DTFeatureACoordinatorImpl.h in Headers */,
 				448F90C31F0E690800A3C548 /* AViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				448F90C41F0E690800A3C548 /* AViewController.m in Sources */,
+				44A360121F1CFD7600D37278 /* DTFeatureACoordinatorImpl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,9 +12,6 @@
 
 @interface ViewController : UITabBarController
 
-@property (nonatomic, strong) id <DTFeatureACoordinatorProtocol> featureACoordinator;
-@property (nonatomic, strong) id <DTFeatureBCoordinatorProtocol> featureBCoordinator;
-
 - (void)reloadViewControllers;
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "DTFeatureBCoordinatorImpl.h"
-#import <FeatureB/FeatureB.h>
+#import <FeatureB/FeatureB-Swift.h>
 
 @implementation DTFeatureBCoordinatorImpl
 

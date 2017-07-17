@@ -22,6 +22,8 @@ public class FeatureBDetailsViewController: UIViewController {
     override public func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationItem.title = "FeatureB Details"
+
         view.backgroundColor = UIColor.white        
     }
 

@@ -11,6 +11,9 @@
 		4426AECC1F137DF80060212E /* DTDemoDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4426AECB1F137DF80060212E /* DTDemoDomain.framework */; };
 		4426AECE1F137E5A0060212E /* FeatureBListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4426AECD1F137E5A0060212E /* FeatureBListViewController.swift */; };
 		4426AEE91F1389720060212E /* FeatureBDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4426AEE81F1389720060212E /* FeatureBDetailsViewController.swift */; };
+		44A360161F1CFD8900D37278 /* DTFeatureBCoordinatorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A360141F1CFD8900D37278 /* DTFeatureBCoordinatorImpl.m */; };
+		44A360171F1CFD8900D37278 /* DTFeatureBCoordinatorImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 44A360151F1CFD8900D37278 /* DTFeatureBCoordinatorImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44A360191F1D017B00D37278 /* FeatureB-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 44A360181F1D017B00D37278 /* FeatureB-Bridging-Header.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		4426AECB1F137DF80060212E /* DTDemoDomain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DTDemoDomain.framework; path = ../Carthage/Build/iOS/DTDemoDomain.framework; sourceTree = "<group>"; };
 		4426AECD1F137E5A0060212E /* FeatureBListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureBListViewController.swift; sourceTree = "<group>"; };
 		4426AEE81F1389720060212E /* FeatureBDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureBDetailsViewController.swift; sourceTree = "<group>"; };
+		44A360141F1CFD8900D37278 /* DTFeatureBCoordinatorImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTFeatureBCoordinatorImpl.m; sourceTree = "<group>"; };
+		44A360151F1CFD8900D37278 /* DTFeatureBCoordinatorImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTFeatureBCoordinatorImpl.h; sourceTree = "<group>"; };
+		44A360181F1D017B00D37278 /* FeatureB-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FeatureB-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +60,13 @@
 		4426AEBF1F137DCA0060212E /* FeatureB */ = {
 			isa = PBXGroup;
 			children = (
+				44A360141F1CFD8900D37278 /* DTFeatureBCoordinatorImpl.m */,
+				44A360151F1CFD8900D37278 /* DTFeatureBCoordinatorImpl.h */,
 				4426AEC01F137DCA0060212E /* FeatureB.h */,
 				4426AEC11F137DCA0060212E /* Info.plist */,
 				4426AECD1F137E5A0060212E /* FeatureBListViewController.swift */,
 				4426AEE81F1389720060212E /* FeatureBDetailsViewController.swift */,
+				44A360181F1D017B00D37278 /* FeatureB-Bridging-Header.h */,
 			);
 			path = FeatureB;
 			sourceTree = "<group>";
@@ -78,6 +87,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4426AEC21F137DCA0060212E /* FeatureB.h in Headers */,
+				44A360191F1D017B00D37278 /* FeatureB-Bridging-Header.h in Headers */,
+				44A360171F1CFD8900D37278 /* DTFeatureBCoordinatorImpl.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44A360161F1CFD8900D37278 /* DTFeatureBCoordinatorImpl.m in Sources */,
 				4426AECE1F137E5A0060212E /* FeatureBListViewController.swift in Sources */,
 				4426AEE91F1389720060212E /* FeatureBDetailsViewController.swift in Sources */,
 			);
@@ -326,6 +338,7 @@
 				4426AEC71F137DCA0060212E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

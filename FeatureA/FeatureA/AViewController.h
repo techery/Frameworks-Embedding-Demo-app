@@ -11,6 +11,4 @@
 
 @interface AViewController : UIViewController
 
-- (instancetype)initWithFeatureBCoordinator:(id <DTFeatureBCoordinatorProtocol>)featureBCoordinator;
-
 @end

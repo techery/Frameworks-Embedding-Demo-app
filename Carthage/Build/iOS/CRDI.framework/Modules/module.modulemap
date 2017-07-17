@@ -1,0 +1,6 @@
+framework module CRDI {
+  umbrella header "CRDI.h"
+
+  export *
+  module * { export * }
+}

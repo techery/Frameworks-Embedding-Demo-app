@@ -7,14 +7,13 @@
 //
 
 #import "DTFeatureACoordinatorImpl.h"
-#import "DTFeatureBCoordinatorImpl.h"
 #import <FeatureA/AViewController.h>
 
 
 @implementation DTFeatureACoordinatorImpl
 
 - (UIViewController *)featureAViewController {
-    AViewController *vc = [[AViewController alloc] initWithFeatureBCoordinator:[DTFeatureBCoordinatorImpl new]];
+    AViewController *vc = [[AViewController alloc] init];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:vc];
     return navController;
 }

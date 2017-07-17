@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		441844211F13751B00D391A1 /* DTDemoDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441844201F13751B00D391A1 /* DTDemoDomain.framework */; };
-		4426AEAF1F137C950060212E /* DTFeatureACoordinatorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4426AEAE1F137C950060212E /* DTFeatureACoordinatorImpl.m */; };
-		4426AEB21F137D520060212E /* DTFeatureBCoordinatorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4426AEB11F137D520060212E /* DTFeatureBCoordinatorImpl.m */; };
 		4426AEC91F137DDE0060212E /* FeatureB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4426AEC81F137DDE0060212E /* FeatureB.framework */; };
 		448F90941F0E684A00A3C548 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 448F90931F0E684A00A3C548 /* main.m */; };
 		448F90971F0E684A00A3C548 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 448F90961F0E684A00A3C548 /* AppDelegate.m */; };
@@ -18,6 +16,9 @@
 		448F909F1F0E684A00A3C548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 448F909E1F0E684A00A3C548 /* Assets.xcassets */; };
 		448F90A21F0E684A00A3C548 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448F90A01F0E684A00A3C548 /* LaunchScreen.storyboard */; };
 		448F90C01F0E68D800A3C548 /* FeatureA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448F90BF1F0E68D800A3C548 /* FeatureA.framework */; };
+		44A360211F1D045700D37278 /* DTAppScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A3601C1F1D045700D37278 /* DTAppScope.m */; };
+		44A360221F1D045700D37278 /* DTAppScopeInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A3601F1F1D045700D37278 /* DTAppScopeInitializer.m */; };
+		44A360681F1D0AC000D37278 /* CRDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44A360671F1D0AC000D37278 /* CRDI.framework */; };
 		44F71FE71F14CE6C00E3B678 /* FeatureC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F71FE61F14CE6C00E3B678 /* FeatureC.framework */; };
 		44F71FE91F14D34300E3B678 /* FeatureC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F71FE81F14D34300E3B678 /* FeatureC.framework */; };
 		44F71FEA1F14D34300E3B678 /* FeatureC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 44F71FE81F14D34300E3B678 /* FeatureC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -45,10 +46,6 @@
 
 /* Begin PBXFileReference section */
 		441844201F13751B00D391A1 /* DTDemoDomain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DTDemoDomain.framework; path = Carthage/Build/iOS/DTDemoDomain.framework; sourceTree = "<group>"; };
-		4426AEAD1F137C950060212E /* DTFeatureACoordinatorImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTFeatureACoordinatorImpl.h; sourceTree = "<group>"; };
-		4426AEAE1F137C950060212E /* DTFeatureACoordinatorImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTFeatureACoordinatorImpl.m; sourceTree = "<group>"; };
-		4426AEB01F137D520060212E /* DTFeatureBCoordinatorImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTFeatureBCoordinatorImpl.h; sourceTree = "<group>"; };
-		4426AEB11F137D520060212E /* DTFeatureBCoordinatorImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTFeatureBCoordinatorImpl.m; sourceTree = "<group>"; };
 		4426AEC81F137DDE0060212E /* FeatureB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FeatureB.framework; path = "FeatureB/build/Debug-iphoneos/FeatureB.framework"; sourceTree = "<group>"; };
 		448F908F1F0E684900A3C548 /* DTDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DTDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		448F90931F0E684A00A3C548 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -61,6 +58,12 @@
 		448F90A11F0E684A00A3C548 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		448F90A31F0E684A00A3C548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		448F90BF1F0E68D800A3C548 /* FeatureA.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FeatureA.framework; path = "FeatureA/build/Debug-iphoneos/FeatureA.framework"; sourceTree = "<group>"; };
+		44A3601B1F1D045700D37278 /* DTAppScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAppScope.h; sourceTree = "<group>"; };
+		44A3601C1F1D045700D37278 /* DTAppScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAppScope.m; sourceTree = "<group>"; };
+		44A3601E1F1D045700D37278 /* DTAppScopeInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTAppScopeInitializer.h; sourceTree = "<group>"; };
+		44A3601F1F1D045700D37278 /* DTAppScopeInitializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTAppScopeInitializer.m; sourceTree = "<group>"; };
+		44A360201F1D045700D37278 /* DTInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTInitializer.h; sourceTree = "<group>"; };
+		44A360671F1D0AC000D37278 /* CRDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CRDI.framework; path = Carthage/Build/iOS/CRDI.framework; sourceTree = "<group>"; };
 		44F71FE61F14CE6C00E3B678 /* FeatureC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FeatureC.framework; path = "FeatureC/build/Debug-iphoneos/FeatureC.framework"; sourceTree = "<group>"; };
 		44F71FE81F14D34300E3B678 /* FeatureC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FeatureC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F71FEC1F14D5A600E3B678 /* FeatureB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FeatureB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44A360681F1D0AC000D37278 /* CRDI.framework in Frameworks */,
 				44F71FE71F14CE6C00E3B678 /* FeatureC.framework in Frameworks */,
 				441844211F13751B00D391A1 /* DTDemoDomain.framework in Frameworks */,
 				44F71FE91F14D34300E3B678 /* FeatureC.framework in Frameworks */,
@@ -108,6 +112,8 @@
 		448F90911F0E684A00A3C548 /* DTDemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				44A3601A1F1D045700D37278 /* DI */,
+				44A3601D1F1D045700D37278 /* Initializers */,
 				448F90951F0E684A00A3C548 /* AppDelegate.h */,
 				448F90961F0E684A00A3C548 /* AppDelegate.m */,
 				448F90981F0E684A00A3C548 /* ViewController.h */,
@@ -117,10 +123,6 @@
 				448F90A01F0E684A00A3C548 /* LaunchScreen.storyboard */,
 				448F90A31F0E684A00A3C548 /* Info.plist */,
 				448F90921F0E684A00A3C548 /* Supporting Files */,
-				4426AEAD1F137C950060212E /* DTFeatureACoordinatorImpl.h */,
-				4426AEAE1F137C950060212E /* DTFeatureACoordinatorImpl.m */,
-				4426AEB01F137D520060212E /* DTFeatureBCoordinatorImpl.h */,
-				4426AEB11F137D520060212E /* DTFeatureBCoordinatorImpl.m */,
 			);
 			path = DTDemoApp;
 			sourceTree = "<group>";
@@ -136,12 +138,32 @@
 		448F90BE1F0E68D800A3C548 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				44A360671F1D0AC000D37278 /* CRDI.framework */,
 				44F71FE61F14CE6C00E3B678 /* FeatureC.framework */,
 				4426AEC81F137DDE0060212E /* FeatureB.framework */,
 				441844201F13751B00D391A1 /* DTDemoDomain.framework */,
 				448F90BF1F0E68D800A3C548 /* FeatureA.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44A3601A1F1D045700D37278 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				44A3601B1F1D045700D37278 /* DTAppScope.h */,
+				44A3601C1F1D045700D37278 /* DTAppScope.m */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		44A3601D1F1D045700D37278 /* Initializers */ = {
+			isa = PBXGroup;
+			children = (
+				44A3601E1F1D045700D37278 /* DTAppScopeInitializer.h */,
+				44A3601F1F1D045700D37278 /* DTAppScopeInitializer.m */,
+				44A360201F1D045700D37278 /* DTInitializer.h */,
+			);
+			path = Initializers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,10 +243,12 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/DTDemoDomain.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CRDI.framework",
 			);
 			name = Carthage;
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/DTDemoDomain.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/CRDI.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -238,10 +262,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				448F909A1F0E684A00A3C548 /* ViewController.m in Sources */,
-				4426AEAF1F137C950060212E /* DTFeatureACoordinatorImpl.m in Sources */,
 				448F90971F0E684A00A3C548 /* AppDelegate.m in Sources */,
+				44A360211F1D045700D37278 /* DTAppScope.m in Sources */,
+				44A360221F1D045700D37278 /* DTAppScopeInitializer.m in Sources */,
 				448F90941F0E684A00A3C548 /* main.m in Sources */,
-				4426AEB21F137D520060212E /* DTFeatureBCoordinatorImpl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +398,10 @@
 				);
 				INFOPLIST_FILE = DTDemoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.techery.DTDemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -394,6 +422,10 @@
 				);
 				INFOPLIST_FILE = DTDemoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.techery.DTDemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

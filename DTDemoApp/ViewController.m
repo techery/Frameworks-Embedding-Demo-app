@@ -8,8 +8,10 @@
 
 #import "ViewController.h"
 
-
 @interface ViewController ()
+
+@property (nonatomic, strong) id <DTFeatureACoordinatorProtocol> ioc_featureACoordinator;
+@property (nonatomic, strong) id <DTFeatureBCoordinatorProtocol> ioc_featureBCoordinator;
 
 @end
 
@@ -17,6 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    [self reloadViewControllers];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,8 +29,8 @@
 }
 
 - (void)reloadViewControllers {
-    UIViewController *vcA = self.featureACoordinator.featureAViewController;
-    UIViewController *vcB = self.featureBCoordinator.featureBListViewController;
+    UIViewController *vcA = self.ioc_featureACoordinator.featureAViewController;
+    UIViewController *vcB = self.ioc_featureBCoordinator.featureBListViewController;
 
     if (vcA && vcB) {
         vcA.tabBarItem.title = @"Feature A";
